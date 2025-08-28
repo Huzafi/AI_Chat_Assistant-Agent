@@ -4,7 +4,7 @@ from agents.run import RunConfig
 import asyncio
 
 # Gemini API Key (move to env or secrets for production)
-gemini_api_key =  "AIzaSyC673_pWB6IQ_SFwU0OzFc14NsFJNPNfXQ"
+gemini_api_key =  # "Enter your api_key"
 
 # Check API key
 if not gemini_api_key:
