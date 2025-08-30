@@ -29,7 +29,8 @@ config = RunConfig(
 
 agent = Agent(
     name="Assistant",
-    instructions="You are a helpful assistant.",
+    instructions="You are a helpful assistant. Always respond based on the conversation context. "
+        "If unsure, politely say 'I'm not sure about that.' Keep responses concise and relevant.",
     model=model
 )
 
