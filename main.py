@@ -3,8 +3,8 @@ from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
 from agents.run import RunConfig
 import asyncio
 
-# Gemini API Key (move to env or secrets for production)
-gemini_api_key =  # "Enter your api_key"
+
+gemini_api_key =   "AIzaSyDRwutVOnwNNLPkJxvptP9_w8hMC7VW9qg"
 
 # Check API key
 if not gemini_api_key:
