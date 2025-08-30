@@ -17,7 +17,7 @@ external_client = AsyncOpenAI(
 )
 
 model = OpenAIChatCompletionsModel(
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     openai_client=external_client
 )
 
@@ -30,7 +30,8 @@ config = RunConfig(
 agent = Agent(
     name="Assistant",
     instructions="You are a helpful assistant. Always respond based on the conversation context. "
-        "If unsure, politely say 'I'm not sure about that.' Keep responses concise and relevant.",
+    "If unsure, politely say 'I'm not sure about that.' Keep responses clear and relevant, "
+    "but provide enough detail to fully answer the question.",
     model=model
 )
 
