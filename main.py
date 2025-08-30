@@ -30,7 +30,7 @@ config = RunConfig(
 agent = Agent(
     name="Assistant",
     instructions="You are a helpful assistant. Always respond based on the conversation context. "
-    "If unsure, politely say 'I'm not sure about that.' Keep responses clear and relevant, "
+    "Keep responses clear and relevant, "
     "but provide enough detail to fully answer the question.",
     model=model
 )
@@ -67,7 +67,7 @@ for chat in st.session_state.chat_history:
         st.markdown(f"**🤖 Assistant:** {chat['message']}")
 
 # User input box
-user_input = st.text_input("💬 Type your message:")
+user_input = st.text_input("💬 Ask Your Query")
 
 if st.button("✨ Send"):
     if user_input:
