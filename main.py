@@ -3,8 +3,7 @@ from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
 from agents.run import RunConfig
 import asyncio
 
-
-gemini_api_key =   "AIzaSyDRwutVOnwNNLPkJxvptP9_w8hMC7VW9qg"
+gemini_api_key = st.secrets["GEMINI_API_KEY"]
 
 # Check API key
 if not gemini_api_key:
