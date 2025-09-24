@@ -52,7 +52,7 @@ def run_asyncio_task(task):
         return asyncio.run(task)
 
 # Streamlit UI
-st.title("AI Chat Assistant")
+st.title("🤖 AI Chat Assistant")
 
 # Initialize session state to store chat history
 if "chat_history" not in st.session_state:
